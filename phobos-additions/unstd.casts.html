@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>unstd.casts - Unstandard documentation</title>
+		<meta http-equiv="refresh" content="10; url=http://denis-sh.bitbucket.org/unstandard/unstd.casts.html">
+		<style type="text/css">
+		body {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 24px;
+			color: #333;
+			text-align: center;
+		}
+		h1 {
+			font-weight: 500;
+			font-size: 36px;
+			color: #666;
+		}
+		b {
+			color: #333;
+		}
+		a:hover, a:focus {
+			color: #2a6496;
+			text-decoration: underline;
+		}
+		a:active, a:hover {
+			outline: 0;
+		}
+		a {
+			color: #428bca;
+			text-decoration: none;
+		}
+		</style>
+		<script>
+			setTimeout(function(){
+				var el = document.getElementById('timeRest');
+				var n = parseInt(el.innerHTML);
+				if(n == 2)
+				{
+					document.getElementById('timeRestAll').innerHTML = "now";
+					setTimeout(function(){
+						window.location = "http://denis-sh.bitbucket.org/unstandard/unstd.casts.html" + document.location.hash;
+					}, 1000);
+					return;
+				}
+				el.innerHTML = n - 1;
+				setTimeout(arguments.callee, 1000);
+		   }, 1000);
+		</script>
+	</head>
+	<body>
+		<h1>The project is moved to <br>
+	<b>Bitbucket</b> <br>
+	and renamed to <br>
+	<b>Unstandard</b></h1>
+		<p>
+			Redirecting to <a href="http://denis-sh.bitbucket.org/unstandard/unstd.casts.html">new location</a> <span id='timeRestAll'>in <b id='timeRest'>7</b> seconds</span>...<br>
+		</p>
+	</body>
+</html>
